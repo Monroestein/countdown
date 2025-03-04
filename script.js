@@ -15,7 +15,7 @@ function Countdown(){
 
             document.getElementById("num-days").innerHTML = `${days}`
 
-            document.getElementById("hours-left").innerHTML=`${hours}:${minutes}:${seconds}`
+            document.getElementById("hours-left").innerHTML=`${hours} H ${minutes} MIN ${seconds} S`
 
             if(distance<0){
                 clearInterval(x);

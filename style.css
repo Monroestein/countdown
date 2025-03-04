@@ -1,21 +1,27 @@
+:root{
+    --dark-grey: #161616;
+    --light-grey: #dbdbdb;
+    --grey: #575757;
+    --red: #a71818;
+}
+
 *{
     margin: 0;
     padding: 0;
-    background: #181818;
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background: var(--dark-grey);
     line-height: 1.5;
     font-weight: 400;
 }
 
 body{
-    border: 1px solid rosybrown;
     display: grid;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     justify-content: center;
     height: 100vh;
 }
 
 header{
-    border: 1px solid #888;
+    /* border: 1px solid #888; */
     text-transform: uppercase;
     width: 70vw;
     height: fit-content;
@@ -24,7 +30,7 @@ header{
 
 h1{
     font-family: fantasy;
-    color: #cecece;
+    color: var(--light-grey);
     font-size: 8vw;
 }
 
@@ -32,16 +38,17 @@ h1{
     width: fit-content;
     height: fit-content;
     margin: auto -10% auto auto;
-    border: 1px solid #464646;
+    /* border: 1px solid #464646; */
     /* transform-style: preserve-3d; */
-    transform: perspective(1200px) rotateY(50deg) rotateX(-5deg) translateY(15px) translateX(-3vw);
+    transform: perspective(1200px) rotateY(50deg) rotateX(-5deg) translateY(15px) translateX(-5vw);
 }
 
 h2{
     font-family: fantasy;
-    color: rosybrown;
+    color: var(--red);
     font-size: 3.5vw;
     background: transparent;
+    text-shadow: 0 0 10px var(--dark-grey);
 }
 
 #subtitle{
@@ -59,38 +66,48 @@ h2{
 
 
 main{
-    border: 1px solid #555;
+    position: relative;
     width: 90vw;
     text-align: center;
 }
 
 #days-left{
-    color: rosybrown;
+    font-family:'Courier New', Courier, monospace;
+    color: var(--red);
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
 }
 
 #num-days{
-    font-size: 8vw;
-    height: fit-content;
-    padding: 0;
-    border: #555 1px solid;
+    width: 100%;
+    font-size: 10vw;
+    font-weight: 800;
+    letter-spacing: -15px;
 }
 
 #text-days{
+    width: 100%;
     font-size: 3vw;
+    background: transparent;
+    position: absolute;
+    top: 20vh;
+    right: -7px;
 }
 
-
+#hours-left{
+    color: var(--grey);
+    font-size: 1.2vw;
+    font-weight: 100;
+}
 
 
 
 
 
 footer{
-    border: 1px solid #444;
     align-self: flex-end;
+    text-align: center;
 }
 
 /* Responsive */
