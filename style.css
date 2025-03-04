@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #181818;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+body{
+    border: 1px solid rosybrown;
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+}
+
+header{
+    border: 1px solid #888;
+    text-transform: uppercase;
+    width: 70vw;
+    height: fit-content;
+    margin: 10vh auto 0;
+}
+
+h1{
+    font-family: fantasy;
+    color: #cecece;
+    font-size: 8vw;
+}
+
+#main-title{
+    width: fit-content;
+    height: fit-content;
+    margin: auto -10% auto auto;
+    border: 1px solid #464646;
+    /* transform-style: preserve-3d; */
+    transform: perspective(1200px) rotateY(50deg) rotateX(-5deg) translateY(15px) translateX(-3vw);
+}
+
+h2{
+    font-family: fantasy;
+    color: rosybrown;
+    font-size: 3.5vw;
+    background: transparent;
+}
+
+#subtitle{
+    width: fit-content;
+    /* rotate: 2deg; */
+    position: absolute;
+    right: 32vw;
+    top: 28vh;
+    z-index: 99;
+    background: transparent;
+    /* border: 1px solid #555; */
+}
+
+
+
+
+main{
+    border: 1px solid #555;
+    width: 90vw;
+    text-align: center;
+}
+
+#days-left{
+    color: rosybrown;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+#num-days{
+    font-size: 8vw;
+    height: fit-content;
+    padding: 0;
+    border: #555 1px solid;
+}
+
+#text-days{
+    font-size: 3vw;
+}
+
+
+
+
+
+
+
+footer{
+    border: 1px solid #444;
+    align-self: flex-end;
+}
+
+/* Responsive */
+
+@media screen {
+    
+}
